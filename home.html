@@ -3,47 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>کالیپ، تخمین قیمت با هوش مصنوعی</title>
 </head>
 <body>
     <header>
         <img src="imgs/logo-mobile.png" class="header__logo" alt="logo-mobile">
-        <a href="#" class="header__login">ورود/ثبت نام</a>
+        <a href="#" class="header__login">
+            <i class="fa-solid fa-user"></i>
+            <span>ورود/ثبت نام</span>
+        </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-list__item">تخمین قیمت</li>
-                <li class="header__nav-list__item">جستجوی ملک</li>
-                <li class="header__nav-list__item">ثبت آگهی</li>
-                <li class="header__nav-list__item">درباره ما</li>
-                <li class="header__nav-list__item">تماس با ما</li>
+                <li class="header__nav-list__item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>تخمین قیمت</span>
+                </li>
+                <li class="header__nav-list__item">
+                    <i class="fa-solid fa-search"></i>
+                    <span>جستجوی ملک</span>
+                </li>
+                <li class="header__nav-list__item">
+                    <i class="fa-solid fa-search"></i>
+                    <span>ثبت آگهی</span>
+                </li>
+                <li class="header__nav-list__item">
+                    <i class="fa-solid fa-search"></i>
+                    <span>درباره ما</span>
+                </li>
             </ul>
         </nav>
     </header>
     <section class="c-hero">
-        <p>تخمین قیمت خونه شما در چند ثانیه</p>
-        <a href="#">شروع تخمین قیمت</a>
+        <h1 class="c-hero__title" >تخمین قیمت ملک شما در چند ثانیـــه</h1>
+        <a class="c-hero__ctr" href="#">امتحان کن!</a>
     </section>
     <section class="c-benefits">
-        <ul>
-            <li>تخمین قیمت با هوش مصنوعی</li>
-            <li>ثبت رایگان آگهی</li>
-            <li>جستجوی پیشرفته ملک</li>
-            <li>ارتباط مستقیم با فروشنده</li>
+        <ul class="c-benefits-list">
+            <li class="c-benefits-list__item">تخمین قیمت با هوش مصنوعی</li>
+            <li class="c-benefits-list__item">ثبت رایگان آگهی</li>
+            <li class="c-benefits-list__item">جستجوی پیشرفته ملک</li>
+            <li class="c-benefits-list__item">ارتباط مستقیم با فروشنده</li>
         </ul>
     </section>
     <section class="c-featured_properties">
-        <ul>
-            <li>
-                <ul>
-                    <li>عکس</li>
-                    <li>قیمت</li>
-                    <li>آدرس</li>
-                    <li>متراژ</li>
+        <ul class="c-featured_properties-list">
+            <li class="c-featured_properties-list__item">
+                <ul class="c-featured_properties-list__item--right">
+                    <img src="imgs/property.jpg" alt="">
+                </ul>
+                <ul class="c-featured_properties-list__item--left">
+                    <li>صد متری خیابان سعدی</li>
+                    <li>
+                        <p>2,000,000,000</p>
+                        <span>تومان</span>
+                    </li>
+                </ul>
+            </li>
+            <hr>
+            <li class="c-featured_properties-list__item">
+                <ul class="c-featured_properties-list__item--right">
+                    <img src="imgs/property.jpg" alt="">
+                </ul>
+                <ul class="c-featured_properties-list__item--left">
+                    <li>صد متری خیابان سعدی</li>
+                    <li>
+                        <p>2,000,000,000</p>
+                        <span>تومان</span>
+                    </li>
                 </ul>
             </li>
         </ul>
         <a href="#">مشاهده همه</a>
+        <hr>
     </section>
     <section class="c-testmonials">
         <ul>
