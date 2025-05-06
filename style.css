@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'iran-bold';
+    src: url("fonts/sans-bold.woff");
+}
+@font-face {
+    font-family: 'iran-light';
+    src: url("fonts/sans-light.woff");
+}
+
+
+/* main and resets */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color : #3498db;
+    --primary-text-color: #333
+}
+
+body {
+    font-family: iran-light;
+    color:  var(--primary-text-color);
+    font-weight: 300;
+    line-height: 1.6;
+    direction: rtl;
+}
+
+/* header and nav */
+
+header {
+    display: grid;
+    grid-template-rows: min-content max-content;
+}
+
+.header__logo{
+    height: 3rem;
+    grid-row: 1/1;
+}
+.header__login{
+    grid-row: 1/1;
+}
+.header__nav{
+    grid-column: 1/-1;
+}
+.header__nav-list{
+    display: flex;
+    list-style: none;
+    font-size: .8rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
